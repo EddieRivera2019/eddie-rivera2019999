@@ -1,0 +1,231 @@
+@media screen and (max-width:400px){
+    h1{
+        text-decoration: underline;
+    }
+    h1::before{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .img-galery{
+         grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+         gap: 15px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+    .img-galery{
+         grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+         gap: 10px;
+     }
+ }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: url(/img/banner.jpg); /* Set the path to your image file */
+    background-size: cover; /* Set the background size to cover the entire header */
+    background-position: center center; /* Set the background position to center */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 0 2px 2px 0 solid #ffffff;
+  }
+  
+  body {
+    font-size: 62.5%; /* Set the root font size to 10px for easy rem calculation */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #131313;
+    background-size: contain;
+    background-position: center center;
+    color: #fff;
+    font-weight: bold;
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+.logo {
+    width: 100px;
+  }
+.logo img {
+    filter: brightness(0) invert(1);
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+.logo img:hover {
+    transform: scale(1.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+.nav-links li {
+    margin: 0 1rem;
+  }
+  
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.8rem;
+  }
+  
+.nav-links a:hover {
+    background-color: gold;
+    color: #fff;
+    transform: scale(1.2);
+}
+.titulo{
+    border-radius: 10px;
+    border: 3px solid gold;
+    margin: 2rem;
+    background-color: #2b2b2b;
+}
+h1{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 2.5rem;
+    color: gold;
+}
+p{
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+    
+  }
+  .mision{
+    margin: 2rem;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+.vision{
+    margin: 2rem;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+.usted{
+    margin: 2rem;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+.equipo{
+    margin: 2rem;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+.usted p{
+    text-align: center;
+}
+.sub-titulo h2 {
+    position: relative;
+    top: 2rem;
+   text-align: center; 
+    padding: 2px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: gold;
+}
+.sub-titulo li{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    margin-left: 10px;
+    text-align: center; 
+    margin: 15px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.compas{
+    position: relative;
+    padding: 30px;
+}
+.wha {
+    position: relative;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    margin: 50px;
+}
+
+.wha img {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.wha img:hover {
+    transform: scale(1.2);
+}
+.img-galery{
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+
+  .img-galery img{
+    width:  100%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 20px;
+    border: 2px solid #e5ff00;
+    
+  }
+  .img-galery img:hover{
+    transform: scale(1.1);
+}
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2b2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 0 2px 2px 0 solid #2b2929;
+    box-shadow: 5px 5px #2b2b2b;
+  }
+  
+  .footer p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+  }
